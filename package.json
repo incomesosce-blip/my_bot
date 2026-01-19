@@ -1,5 +1,5 @@
 {
-  "name": "ruhin-bot",
+  "name": "ruhin-messenger-bot",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -7,6 +7,6 @@
   },
   "dependencies": {
     "fca-project-orion": "latest",
-    "fs-extra": "latest"
+    "fs-extra": "^10.0.0"
   }
 }
