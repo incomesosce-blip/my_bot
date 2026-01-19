@@ -1,4 +1,4 @@
-name: Ruhin-Bot-Run
+name: Bot-Run
 
 on:
   push:
@@ -6,13 +6,14 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  run-bot:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
           node-version: '16'
-      - run: npm install --force
-      - run: node index.js
-
+      - name: Fast-Install-and-Run
+        run: |
+          npm install --no-audit --no-fund --quiet
+          node index.js
