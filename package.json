@@ -1,12 +1,19 @@
 {
-  "name": "ruhin-messenger-bot",
-  "version": "1.0.0",
-  "main": "index.js",
+  "name": "ruhin-cyber-bot",
+  "version": "5.0.0",
+  "description": "Ruhin's Power Bot",
+  "main": "Ullash.js",
+  "engines": {
+    "node": ">=20.18.1"
+  },
   "scripts": {
-    "start": "node index.js"
+    "start": "node Ullash.js"
   },
   "dependencies": {
-    "fca-project-orion": "latest",
-    "fs-extra": "^10.0.0"
+    "cyber-bot-fca": "latest",
+    "fs-extra": "^10.1.0",
+    "axios": "^0.26.1",
+    "chalk": "^4.1.2",
+    "moment-timezone": "^0.5.37"
   }
 }
