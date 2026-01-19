@@ -3,7 +3,7 @@ name: Ruhin-Bot-Run
 on:
   push:
     branches: [ main ]
-  workflow_dispatch: # এটা দিলে তুমি নিজে বাটন টিপে বট চালু করতে পারবে
+  workflow_dispatch:
 
 jobs:
   build:
@@ -13,5 +13,6 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: '16'
-      - run: npm install
+      - run: npm install --force
       - run: node index.js
+
